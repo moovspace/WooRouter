@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+<title>Email</title>
+<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+<style type="text/css">
+:root{
+    --padding: 20px;
+    --top-border-color: #5c5;
+    --footer-color: #222;
+    --footer-bg: #fff;
+    --footer-border-color: #f1f5f7;
+}
+html,body{
+    padding: 0px;
+    margin: 0px;
+    background: #f1f5f7;
+}
+#xxx-box *{
+    text-decoration: none;
+    box-sizing: border-box;
+}
+#xxx-box{
+    margin: 20px auto;
+    padding: 0px;
+    width: 96%;
+    max-width: 768px;
+    background: #fff;
+    border-top: 3px solid var(--top-border-color);
+    overflow: hidden;
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+}
+#xxx-logo{
+    float: left;
+    width: 20%;
+}
+#xxx-page{
+    float: right;
+    padding: 0px;
+    color: var(--top-border-color);
+    font-weight: 400;
+    font-size: 14px;
+}
+#xxx-page:hover{
+    color: #222;
+}
+#xxx-email-header{
+    float: left;
+    width: 100%;
+    padding: var(--padding);
+}
+#xxx-email-content{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: var(--padding);
+}
+#xxx-email-footer{
+    float: left;
+    width: 100%;
+    padding: var(--padding);
+    background: var(--footer-bg);
+    color: var(--footer-color);
+    border-top: 1px solid var(--footer-border-color);
+}
+.xxx-h1{
+    font-size: 25px;
+    font-weight: 900;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif !important
+}
+.xxx-h3{
+    margin-top: 0px;
+    font-size: 19px;
+    font-weight: 900;
+    font-family: Montserrat, Verdana, Geneva, Tahoma, sans-serif !important
+}
+.xxx-text{
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif !important;
+    font-size: 15px;
+    font-weight: 300
+}
+</style>
+</head>
+<body>
+    <div id="xxx-box">
+        <div id="xxx-email-header">
+            <img src="{LOGO}" id="xxx-logo">
+            <a href="{URL}" id="xxx-page"> visit page </a>
+        </div>
+        <div id="xxx-email-content">
+            <h1 class="xxx-h1">{HI}</h1>
+            <div class="xxx-text">
+                {TEXT}
+            </div>
+        </div>
+        <div id="xxx-email-footer">
+            <h3 class="xxx-h3">{COMPANY}</h3>
+            <div class="xxx-text">
+                {BYE}
+            </div>
+        </div>
+    </div>
+</body>
+</html>
