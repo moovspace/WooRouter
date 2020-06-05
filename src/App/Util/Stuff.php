@@ -11,7 +11,7 @@ class Stuff
         return $doc->saveHTML();
     }
 
-    function ResposiveImages($html='')
+    function ResponsiveImages($html='')
     {
         $dom = new DOMDocument('1.0', 'UTF-8');
         $dom->loadHTML(mb_convert_encoding($html, 'HTML-ENTITIES', 'UTF-8'));
