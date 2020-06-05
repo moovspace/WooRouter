@@ -100,33 +100,6 @@ class Router
 		}
 	}
 
-	function LoadClass($path, $method)
-	{
-		if(!empty($path) || !empty($method))
-		{
-			$p = $this->ClearUrl($path); // Class Path
-			$m = $method; // Method
-			$s = explode ('/', $p);
-			$c = end ($s); // Class name
-			$f = "src/" . $p . ".php";
-
-			if(file_exists($f)){
-				require ($f); // Include class
-				$o = new $c(); // Create class object
-
-				// Run method
-				if(method_exists($o, $m)){
-					echo $o->$m($this);
-					exit;
-				}else{
-					throw new Exception("Create new controller (".$p.") method: " . $m, 2);
-				}
-			}else{
-				throw new Exception("Create new controller file: " . $f, 1);
-			}
-		}
-	}
-
 	function ErrorPage()
 	{
 		ErrorPage::Error();
