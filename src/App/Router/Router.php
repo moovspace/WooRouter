@@ -96,7 +96,7 @@ class Router
 			echo $o->$method($this);
 			exit;
 		}else{
-			throw new Exception("Create new controller (".$p.") method: " . $m, 2);
+			throw new Exception("Create new controller (".$path.") method: " . $method, 2);
 		}
 	}
 
