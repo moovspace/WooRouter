@@ -1,5 +1,5 @@
 <?php
-namespace Woo\App\Stuff;
+namespace Woo\App\Util;
 
 class Stuff
 {

@@ -1,5 +1,5 @@
 <?php
-namespace Woo\Util;
+namespace Woo\App\Util;
 
 class Uuid
 {

@@ -2,7 +2,7 @@
 namespace Woo\App\Images;
 use \Exception;
 
-class ImageSecureShow
+class ImageShow
 {
 	public $MimeTypes = ['gif'=> 'image/gif', 'png'=> 'image/png', 'jpeg'=> 'image/jpeg', 'jpg'=> 'image/jpeg'];
 
